@@ -21,6 +21,8 @@ namespace ExcelReport.Driver.NPOI
 
         public byte[] SaveToBuffer()
         {
+            for (var index = 0; index < NpoiWorkbook.NumberOfSheets; ++index)
+                NpoiWorkbook.GetSheetAt(index).ForceFormulaRecalculation = true;
             using (var ms = new MemoryStream())
             {
                 NpoiWorkbook.Write(ms);
