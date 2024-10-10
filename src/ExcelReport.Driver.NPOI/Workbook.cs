@@ -2,6 +2,7 @@
 using NPOI.Extend;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using NpoiSheet = NPOI.SS.UserModel.ISheet;
 using NpoiWorkbook = NPOI.SS.UserModel.IWorkbook;
 
@@ -20,7 +21,11 @@ namespace ExcelReport.Driver.NPOI
 
         public byte[] SaveToBuffer()
         {
-            return NpoiWorkbook.SaveToBuffer();
+            using (var ms = new MemoryStream())
+            {
+                NpoiWorkbook.Write(ms);
+                return ms.ToArray();
+            }
         }
 
         public IEnumerator<ISheet> GetEnumerator()
