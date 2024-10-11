@@ -7,7 +7,7 @@
     <PackageProjectUrl>https://github.com/cxwl3sxl/ExcelReport</PackageProjectUrl>
     <PackageIconUrl>http://images.cnblogs.com/cnblogs_com/hanzhaoxin/638238/o_ExcelReport.png</PackageIconUrl>
     <PackageReleaseNotes>升级NPOI到2.7.1</PackageReleaseNotes>
-    <Version>2.0.4</Version>
+    <Version>2.0.5</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId></PackageId>
   </PropertyGroup>
@@ -24,14 +24,7 @@
   <ItemGroup>
     <PackageReference Include="ExcelReport.Driver" Version="2.0.0" />
     <PackageReference Include="NPOI" Version="2.7.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\NPOI.Extend\src\NPOI.Extend.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include=".\bin\Debug\netstandard2.0\NPOI.Extend.dll" Pack="true" PackagePath="lib/netstandard2.0" />
+    <PackageReference Include="PJ.NPOI.Extend" Version="1.1.4" />
   </ItemGroup>
 
 </Project>

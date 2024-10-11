@@ -27,10 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\NPOI.Extend\src\NPOI.Extend.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include=".\bin\Debug\netstandard2.0\NPOI.Extend.dll" Pack="true" PackagePath="lib/netstandard2.0" />
   </ItemGroup>
 

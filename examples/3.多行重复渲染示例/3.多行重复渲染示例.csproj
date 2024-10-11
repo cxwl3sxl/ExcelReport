@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ExcelReport.Driver.NPOI\ExcelReport.Driver.NPOI.csproj" />
     <ProjectReference Include="..\..\src\ExcelReport\ExcelReport.csproj" />
   </ItemGroup>
 
