@@ -1,5 +1,4 @@
 ﻿using ExcelReport;
-using ExcelReport.Driver.NPOI;
 using ExcelReport.Renderers;
 using System;
 
@@ -10,7 +9,8 @@ namespace _3.多行重复渲染示例
         private static void Main(string[] args)
         {
             // 项目启动时，添加
-            Configurator.Put(".xls", new WorkbookLoader());
+            //Configurator.Put(".xls", new ExcelReport.Driver.NPOI.WorkbookLoader());
+            Configurator.Put(".xls", new ExcelReport.Driver.Syncfusion.WorkbookLoader());
 
             try
             {
