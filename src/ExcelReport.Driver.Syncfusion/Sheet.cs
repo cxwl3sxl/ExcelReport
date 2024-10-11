@@ -43,7 +43,7 @@ namespace ExcelReport.Driver.Syncfusion
         public int CopyRows(int start, int end)
         {
             var rowCount = end - start + 1;
-            _workbookWorksheet.InsertRow(start + rowCount, rowCount);
+            _workbookWorksheet.InsertRow(start + rowCount + 1, rowCount);
             for (var i = start; i <= end; i++)
             {
                 var source = _workbookWorksheet.Rows[i];
@@ -58,7 +58,7 @@ namespace ExcelReport.Driver.Syncfusion
         public int RemoveRows(int start, int end)
         {
             var count = end - start + 1;
-            _workbookWorksheet.DeleteRow(start, count);
+            _workbookWorksheet.DeleteRow(start + 1, count);
             return count;
         }
     }

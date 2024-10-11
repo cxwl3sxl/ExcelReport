@@ -1,4 +1,5 @@
-﻿using Syncfusion.XlsIO;
+﻿using System.Diagnostics;
+using Syncfusion.XlsIO;
 
 namespace ExcelReport.Driver.Syncfusion
 {
@@ -22,8 +23,16 @@ namespace ExcelReport.Driver.Syncfusion
 
         public object Value
         {
-            get => _range.Value2;
-            set => _range.Value2 = value;
+            get
+            {
+                Trace.WriteLine($"Read Val {RowIndex},{ColumnIndex} -> {_range.Value2}");
+                return _range.Value2;
+            }
+            set
+            {
+                Trace.WriteLine($"Set Val {RowIndex},{ColumnIndex} -> {value}");
+                _range.Value2 = value;
+            }
         }
     }
 }
