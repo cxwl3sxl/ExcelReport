@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelReport.Driver.Syncfusi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NPOI.Extend", "..\NPOI.Extend\src\NPOI.Extend.csproj", "{CA80CE5F-008A-473C-8ABD-F426646B3C20}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PJ.ExcelReport.Driver.NPOI", "src\ExcelReport.Driver.NPOI\PJ.ExcelReport.Driver.NPOI.csproj", "{DF89D8B4-8DAE-477B-92BD-074404ED8FA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{CA80CE5F-008A-473C-8ABD-F426646B3C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA80CE5F-008A-473C-8ABD-F426646B3C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA80CE5F-008A-473C-8ABD-F426646B3C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF89D8B4-8DAE-477B-92BD-074404ED8FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF89D8B4-8DAE-477B-92BD-074404ED8FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF89D8B4-8DAE-477B-92BD-074404ED8FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF89D8B4-8DAE-477B-92BD-074404ED8FA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{95CA5870-B791-4086-BB5A-6750F81B0737} = {319FF12B-5B28-42B6-87A6-4A31B8049281}
 		{3D80CB0E-27F6-4F49-B999-51482DA5E3D7} = {D482BFE0-F981-4F4B-9F0E-0C586FA804FA}
 		{CA80CE5F-008A-473C-8ABD-F426646B3C20} = {D482BFE0-F981-4F4B-9F0E-0C586FA804FA}
+		{DF89D8B4-8DAE-477B-92BD-074404ED8FA5} = {D482BFE0-F981-4F4B-9F0E-0C586FA804FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4279AAA3-619A-4506-A58D-AAC9574061E9}
