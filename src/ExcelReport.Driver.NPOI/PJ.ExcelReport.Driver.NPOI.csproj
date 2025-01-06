@@ -23,8 +23,11 @@
 
   <ItemGroup>
     <PackageReference Include="ExcelReport.Driver" Version="2.0.0" />
-    <PackageReference Include="NPOI" Version="2.7.1" />
-    <PackageReference Include="PJ.NPOI.Extend" Version="1.1.4" />
+    <PackageReference Include="NPOI" Version="2.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\NPOI.Extend\src\PJ.NPOI.Extend.csproj" />
   </ItemGroup>
 
 </Project>
