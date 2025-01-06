@@ -7,7 +7,7 @@
     <PackageProjectUrl>https://github.com/cxwl3sxl/ExcelReport</PackageProjectUrl>
     <PackageIconUrl>http://images.cnblogs.com/cnblogs_com/hanzhaoxin/638238/o_ExcelReport.png</PackageIconUrl>
     <PackageReleaseNotes>升级NPOI到2.7.1</PackageReleaseNotes>
-    <Version>2.0.5</Version>
+    <Version>2.0.6</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId></PackageId>
   </PropertyGroup>
